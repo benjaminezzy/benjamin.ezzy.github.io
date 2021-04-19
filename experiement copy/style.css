@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+h1 {
+    font-family: 'Dela Gothic One', cursive;
+    color: black;
+}
+
+.lightswitch {
+    text-align: center;
+}
+
+#dark {
+    background-color: #2e2f30;
+    text-decoration-color: #d8e9f0;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: medium;
+}
+
+#light {
+    background-color: #f5f378;
+    text-decoration-color: #111212;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: x-large;
+}
+
+body{
+    background-color: #2e2f30;
+    width: 100%;
+    height: 1000px;
+}
+
+.box{
+    background-color:  #2e2f30;
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.box:hover{
+    animation-duration: 3s;
+    animation-name: light;
+
+}
+
+@keyframes light {
+    from{
+        background-color: #2e2f30;
+    }
+    to{
+        background-color: #f5f378;
+    }
+}
+
+.label {
+    display: flex;
+
+    /* Rounded border */
+    border-radius: 9999px;
+
+    /* Size */
+    height: 32px;
+    width: 64px;
+
+    /* OFF status */
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+
+    /* ON status */
+    background-color: #357edd;
+    border: 1px solid #357edd;
+    /* Push the circle to the right */
+    justify-content: flex-end;
+}
+
+.label__input {
+    /* Hide the input */
+    display: none;
+}
+
+.label__circle {
+    /* Rounded border */
+    border-radius: 9999px;
+
+    /* Size */
+    width: 32px;
+
+    background-color: #FFF;
+
+    /* OFF status */
+    border: 1px solid rgba(0, 0, 0, .3);
+}
